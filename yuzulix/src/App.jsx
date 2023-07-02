@@ -5,30 +5,40 @@ import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import { teal } from "@mui/material/colors";
 
 const themeOptions = {
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: 8,
+          textTransform: "none",
+        },
+      },
+    },
+  },
   palette: {
-    mode: 'light',
+    mode: "light",
     primary: {
       main: teal[400],
     },
     secondary: {
-      main: '#2979ff',
+      main: "#2979ff",
     },
     error: {
-      main: '#c07791',
+      main: "#c07791",
     },
   },
 };
-const theme = createTheme(themeOptions)
+const theme = createTheme(themeOptions);
 
 function App() {
   return (
     <BrowserRouter>
-    <ThemeProvider theme={theme}>
-      <CssBaseline/>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </ThemeProvider>
     </BrowserRouter>
   );
 }

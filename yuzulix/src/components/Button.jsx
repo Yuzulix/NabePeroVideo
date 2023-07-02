@@ -1,12 +1,11 @@
 import { Button, Typography } from "@mui/material";
 
-const MyButton = () => {
+const StyledButton = () => {
   return (
     <Button
-      variant="outlined"
+      variant="contained"
       sx={{
-        borderRadius: 20,
-        border: 2,
+        borderRadius: 8,
         textTransform: 'none',
       }}
     >
@@ -15,4 +14,4 @@ const MyButton = () => {
   );
 };
 
-export default MyButton;
+export default StyledButton;
