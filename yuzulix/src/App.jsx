@@ -1,8 +1,10 @@
 import "./App.css";
+import CssBaseline from "@mui/material/CssBaseline";
+import { ThemeProvider, createTheme } from "@mui/material";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import { teal } from "@mui/material/colors";
+import DrawerAppBar from "./components/AppBar";
 
 const themeOptions = {
   components: {
@@ -35,9 +37,10 @@ function App() {
     <BrowserRouter>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
+        <DrawerAppBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
       </ThemeProvider>
     </BrowserRouter>
   );
