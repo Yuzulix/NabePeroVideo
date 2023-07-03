@@ -24,6 +24,7 @@ const VideoThumbnail = (props) => {
       }}
       onMouseEnter={handleChange}
       onMouseLeave={handleChange}
+      role='button'
     >
       <Fade in={checked}>
         <GlassBox
