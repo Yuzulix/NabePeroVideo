@@ -19,7 +19,7 @@ const theme = createTheme({
       dark: teal[700],
     },
     secondary: {
-      main: "#2979ff",
+      main: teal[50],
     },
     error: {
       main: "#c07791",

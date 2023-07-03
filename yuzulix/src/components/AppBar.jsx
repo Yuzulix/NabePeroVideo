@@ -1,22 +1,20 @@
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import logo from "../assets/nabepero-logo.png";
 
 const navItems = ["Home", "About", "Contact"];
 
 function SimpleAppBar() {
   return (
     <Box sx={{ display: "flex" }}>
-      <AppBar component="nav">
+      <AppBar component="nav" color="secondary">
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Nabe Pero
-          </Typography>
+          <img src={logo} alt="logo" width={200} className="classes.logo" />
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
+              <Button key={item} sx={{color: 'black'}}>
                 {item}
               </Button>
             ))}

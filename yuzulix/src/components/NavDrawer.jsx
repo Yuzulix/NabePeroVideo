@@ -27,7 +27,7 @@ export default function TemporaryDrawer() {
         sx={{
           position: "fixed",
           bottom: 32,
-          right: 32,
+          left: 32,
           backgroundColor: "primary.main",
           color: "white",
           borderRadius: 1,
