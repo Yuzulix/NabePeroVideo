@@ -6,16 +6,12 @@ import Button from "@mui/material/Button";
 
 const navItems = ["Home", "About", "Contact"];
 
-function DrawerAppBar() {
+function SimpleAppBar() {
   return (
-    <Box sx={{ display: "flex", marginTop: 5}}>
+    <Box sx={{ display: "flex" }}>
       <AppBar component="nav">
         <Toolbar>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, }}
-          >
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Nabe Pero
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
@@ -31,4 +27,4 @@ function DrawerAppBar() {
   );
 }
 
-export default DrawerAppBar;
+export default SimpleAppBar;

@@ -3,7 +3,7 @@ import VideoCard from "../components/VideoCard";
 
 const Home = () => (
   <>
-    <Container sx={{ marginY: 5 }}>
+    <Container sx={{ marginY: 10 }}>
       <Grid container spacing={{xs: 1, md: 6}}>
         <Grid item xs={12} md={4}>
           <VideoCard />

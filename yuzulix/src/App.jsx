@@ -1,15 +1,17 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import DrawerAppBar from "./components/AppBar";
+import SimpleAppBar from "./components/AppBar";
+import SwipeableEdgeDrawer from './components/NavDrawer'
 
 function App() {
   return (
     <>
-      <DrawerAppBar />
+      <SimpleAppBar />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      <SwipeableEdgeDrawer />
     </>
   );
 }
