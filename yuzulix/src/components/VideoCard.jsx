@@ -1,10 +1,11 @@
-import { Box, Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
 import VideoModal from "./VideoModal";
 
 const VideoCard = () => (
   <>
     <Box marginTop={2}>
-      <VideoModal/>
+      <VideoModal />
       <Typography variant="h4" component="h2">
         Video Info
       </Typography>

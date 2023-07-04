@@ -7,10 +7,10 @@ import PlayArrowRoundedIcon from "@mui/icons-material/PlayArrowRounded";
 import Fade from "@mui/material/Fade";
 
 const VideoThumbnail = (props) => {
-  const [checked, setChecked] = useState(false);
+  const [hovered, setHovered] = useState(false);
 
   const handleChange = () => {
-    setChecked((prev) => !prev);
+    setHovered((prev) => !prev);
   };
 
   return (
@@ -24,9 +24,9 @@ const VideoThumbnail = (props) => {
       }}
       onMouseEnter={handleChange}
       onMouseLeave={handleChange}
-      role='button'
+      role="button"
     >
-      <Fade in={checked}>
+      <Fade in={hovered}>
         <GlassBox
           sx={{
             position: "absolute",
@@ -47,7 +47,7 @@ const VideoThumbnail = (props) => {
           />
         </GlassBox>
       </Fade>
-      <img src="https://picsum.photos/1280/720" alt="" className="img" />
+      <img src="https://picsum.photos/1280/720" alt="" className="img" loading="lazy"/>
     </Box>
   );
 };

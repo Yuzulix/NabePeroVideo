@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState } from "react";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
@@ -6,9 +6,10 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/MenuOutlined";
+import { Link } from "react-router-dom";
 
 export default function TemporaryDrawer() {
-  const [state, setState] = React.useState(false);
+  const [state, setState] = useState(false);
 
   const toggleDrawer = (open) => (event) => {
     if (
@@ -21,42 +22,39 @@ export default function TemporaryDrawer() {
     setState(open);
   };
 
+  const navItems = ["Home", "About", "Contact"];
+  const style = { textDecoration: "none", color: "black" };
+
   return (
     <>
       <IconButton
         sx={{
           position: "fixed",
-          bottom: 32,
-          left: 32,
-          backgroundColor: "primary.main",
-          color: "white",
+          top: 10,
+          right: 16,
+          // backgroundColor: "primary.main",
+          // color: "white",
           borderRadius: 1,
           visibility: { xs: "visible", sm: "hidden" },
           "&:hover": {
-            backgroundColor: "primary.dark",
+            backgroundColor: "primary.main",
           },
         }}
         onClick={toggleDrawer(true)}
       >
         <MenuIcon />
       </IconButton>
-      <Drawer anchor="bottom" open={state} onClose={toggleDrawer(false)}>
+      <Drawer anchor="top" open={state} onClose={toggleDrawer(false)}>
         <List>
-          <ListItem>
-            <ListItemButton>
-              <ListItemText primary="Home" />
-            </ListItemButton>
-          </ListItem>
-          <ListItem>
-            <ListItemButton>
-              <ListItemText primary="About" />
-            </ListItemButton>
-          </ListItem>
-          <ListItem>
-            <ListItemButton>
-              <ListItemText primary="Contact" />
-            </ListItemButton>
-          </ListItem>
+          {navItems.map((item) => (
+            <Link key={item} style={style} to={`/${item}`}>
+              <ListItem>
+                <ListItemButton>
+                  <ListItemText primary={`${item}`} />
+                </ListItemButton>
+              </ListItem>
+            </Link>
+          ))}
         </List>
       </Drawer>
     </>
