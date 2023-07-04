@@ -10,10 +10,10 @@ const navItems = ["Home", "About", "Contact"];
 
 function SimpleAppBar() {
   return (
-    <Box sx={{ display: "flex"}}>
-      <AppBar component="nav" color="secondary">
+    <Box sx={{ display: "flex" }}>
+      <AppBar component="nav" sx={{ backgroundColor: "white" }}>
         <Toolbar>
-          <Box sx={{flexGrow: 1}}>
+          <Box sx={{ flexGrow: 1 }}>
             <Link style={{ textDecoration: "none" }} to={"/Home"}>
               <img src={logo} alt="logo" width={200} className="classes.logo" />
             </Link>

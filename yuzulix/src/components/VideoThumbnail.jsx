@@ -13,13 +13,18 @@ const VideoThumbnail = (props) => {
     setHovered((prev) => !prev);
   };
 
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
+
   return (
     <Box
       onClick={props.handleOpen}
       sx={{
         position: "relative",
         padding: 3,
-        background: `linear-gradient(${teal[500]}, ${teal[50]})`,
+        // background: `linear-gradient(${teal[500]}, ${teal[50]})`,
+        background: `linear-gradient(${getRandomInt(360)}deg, #323232 0%,#6DB193 50%, #F4E5C2 100%)`,
         borderRadius: "5px",
       }}
       onMouseEnter={handleChange}
@@ -47,7 +52,12 @@ const VideoThumbnail = (props) => {
           />
         </GlassBox>
       </Fade>
-      <img src="https://picsum.photos/1280/720" alt="" className="img" loading="lazy"/>
+      <img
+        src="https://picsum.photos/1280/720"
+        alt=""
+        className="img"
+        loading="lazy"
+      />
     </Box>
   );
 };

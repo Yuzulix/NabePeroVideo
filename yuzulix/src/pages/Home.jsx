@@ -12,6 +12,7 @@ const Home = () => (
           width: "100vw",
           position: "relative",
           left: "calc(-50vw + 50%)",
+          color: 'white'
         }}
       >
         <Typography variant="h4" component="h1">
@@ -23,6 +24,45 @@ const Home = () => (
         </Typography>
       </Box>
       <Grid container spacing={{ xs: 1, md: 6 }}>
+        <Grid item xs={12} md={4}>
+          <VideoCard />
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <VideoCard />
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <VideoCard />
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <VideoCard />
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <VideoCard />
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <VideoCard />
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <VideoCard />
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <VideoCard />
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <VideoCard />
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <VideoCard />
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <VideoCard />
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <VideoCard />
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <VideoCard />
+        </Grid>
         <Grid item xs={12} md={4}>
           <VideoCard />
         </Grid>
