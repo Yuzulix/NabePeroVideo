@@ -6,7 +6,7 @@ const VideoCard = () => (
   <>
     <Box marginTop={2}>
       <VideoModal />
-      <Typography variant="h4" component="h2">
+      <Typography variant="h5" component="h2" marginTop={2}>
         Video Info
       </Typography>
       <Typography variant="body1" component="p">
