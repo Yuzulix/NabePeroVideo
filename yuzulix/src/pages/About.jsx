@@ -63,6 +63,7 @@ const About = () => {
           gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr 1fr" },
           gap: 5,
         }}
+        component="section"
       >
         {names.map((name, i) => (
           <Profile key={i} name={name} />

@@ -22,7 +22,7 @@ const Home = () => (
           adipisci, earum at rem dicta in.
         </Typography>
       </Box>
-      <Grid container spacing={{ xs: 1, md: 6 }}>
+      <Grid component="section" container spacing={{ xs: 1, md: 6 }}>
         <Grid item xs={12} md={4}>
           <VideoCard />
         </Grid>
