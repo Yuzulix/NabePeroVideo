@@ -1,20 +1,28 @@
+import { Box } from "@mui/material";
+
 const About = () => {
   return (
     <>
-      <div>ABOUT US</div>
-      <div>ABOUT US</div>
-      <div>ABOUT US</div>
-      <div>ABOUT US</div>
-      <div>ABOUT US</div>
-      <div>ABOUT US</div>
-      <div>ABOUT US</div>
-      <div>ABOUT US</div>
-      <div>ABOUT US</div>
-      <div>ABOUT US</div>
-      <div>ABOUT US</div>
-      <div>ABOUT US</div>
-      <div>ABOUT US</div>
-      <div>ABOUT US</div>
+      <Box>ABOUT US1</Box>
+      <Box>ABOUT US</Box>
+      <Box>ABOUT US</Box>
+      <Box>ABOUT US</Box>
+      <Box>ABOUT US</Box>
+      <Box>ABOUT US</Box>
+      <Box>ABOUT US</Box>
+      <Box>ABOUT US</Box>
+      <Box>ABOUT US</Box>
+      <Box>ABOUT US</Box>
+      <Box>ABOUT US1</Box>
+      <Box>ABOUT US</Box>
+      <Box>ABOUT US</Box>
+      <Box>ABOUT US</Box>
+      <Box>ABOUT US</Box>
+      <Box>ABOUT US</Box>
+      <Box>ABOUT US</Box>
+      <Box>ABOUT US</Box>
+      <Box>ABOUT US</Box>
+      <Box>ABOUT US</Box>
     </>
   );
 };
