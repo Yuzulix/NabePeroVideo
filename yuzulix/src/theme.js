@@ -1,4 +1,3 @@
-// import { teal } from "@mui/material/colors";
 import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
@@ -15,12 +14,9 @@ const theme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      // main: teal[400],
-      // dark: teal[700],
       main: "#6DB193",
     },
     secondary: {
-      // main: teal[50],
       main: "#6db193",
     },
     accent: {

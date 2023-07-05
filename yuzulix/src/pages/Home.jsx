@@ -3,7 +3,7 @@ import VideoCard from "../components/VideoCard";
 
 const Home = () => (
   <>
-    <Container sx={{ marginY: 5 }}>
+    <Container sx={{ marginY: 5}}>
       <Box
         component="section"
         sx={{

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Box from "@mui/material/Box";
-import { teal } from "@mui/material/colors";
 import PropTypes from "prop-types";
 import GlassBox from "./GlassBox";
 import PlayArrowRoundedIcon from "@mui/icons-material/PlayArrowRounded";
@@ -23,8 +22,9 @@ const VideoThumbnail = (props) => {
       sx={{
         position: "relative",
         padding: 3,
-        // background: `linear-gradient(${teal[500]}, ${teal[50]})`,
-        background: `linear-gradient(${getRandomInt(360)}deg, #323232 0%,#6DB193 50%, #F4E5C2 100%)`,
+        background: `linear-gradient(${getRandomInt(
+          360
+        )}deg, #323232 0%,#6DB193 50%, #F4E5C2 100%)`,
         borderRadius: "5px",
       }}
       onMouseEnter={handleChange}
@@ -57,6 +57,10 @@ const VideoThumbnail = (props) => {
         alt=""
         className="img"
         loading="lazy"
+        style={{
+          width: "100%",
+          objectFit: "cover",
+        }}
       />
     </Box>
   );
