@@ -6,10 +6,14 @@ const StyledButton = () => {
       variant="contained"
       sx={{
         borderRadius: 8,
-        textTransform: 'none',
+        textTransform: "none",
+        display: 'block'
       }}
+      type="submit"
     >
-      <Typography component="span" variant="subtitle1">Watch Now</Typography>
+      <Typography component="span" variant="subtitle1">
+        Submit
+      </Typography>
     </Button>
   );
 };
