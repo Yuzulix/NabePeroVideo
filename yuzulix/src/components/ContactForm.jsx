@@ -11,7 +11,6 @@ const ContactForm = () => {
     subject: "",
     message: "",
   });
-  console.log('ERRORS', errors)
 
   const onSubmit = (data) => {
     console.log("CONTACT FORM DATA", data);
@@ -22,25 +21,40 @@ const ContactForm = () => {
       <TextField
         label="Email"
         {...register("email", {
+          required: true,
           pattern: {
             value: /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g,
-            message: "email invalid",
+            message: "Invalid Email",
           },
         })}
         fullWidth
         margin="normal"
-        // get bool from errors.email
-        // error={errors.email}
+        error={errors.email ? true : false}
+        helperText={errors.email ? errors.email.message : ""}
       />
       <TextField
         label="Subject"
-        {...register("subject")}
+        {...register("subject", { required: "Required" })}
         fullWidth
         margin="normal"
+        error={errors.subject ? true : false}
+        helperText={errors.subject ? errors.subject.message : ""}
       />
       <TextField
         label="Message"
-        {...register("message")}
+        {...register("message", {
+          required: true,
+          minLength: {
+            value: 10,
+            message: "Min char count 10",
+          },
+          maxLength: {
+            value: 300,
+            message: "Max char coount 300",
+          },
+        })}
+        error={errors.message ? true : false}
+        helperText={errors.message ? errors.message.message : ""}
         multiline
         fullWidth
         margin="normal"
