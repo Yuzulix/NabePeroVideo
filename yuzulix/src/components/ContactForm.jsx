@@ -51,7 +51,7 @@ const ContactForm = () => {
             message: "Min char count 10",
           },
           maxLength: {
-            value: 300,
+            value: 300000,
             message: "Max char coount 300",
           },
         })}
