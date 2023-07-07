@@ -1,4 +1,5 @@
-import { Button, styled } from "@mui/material";
+import Button from "@mui/material/Button";
+import styled from "@emotion/styled";
 
 const StyledButton = styled(Button)(() => ({
   borderRadius: 20,

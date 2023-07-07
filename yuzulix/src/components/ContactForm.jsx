@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
-import { Box, TextField } from "@mui/material";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
 import StyledButton from "./Button";
 const ContactForm = () => {
   const {
@@ -15,7 +16,7 @@ const ContactForm = () => {
 
   const onSubmit = (data) => {
     console.log("CONTACT FORM DATA", data);
-    setTimeout(() => reset(), 2000)
+    setTimeout(() => reset(), 2000);
   };
 
   return (
