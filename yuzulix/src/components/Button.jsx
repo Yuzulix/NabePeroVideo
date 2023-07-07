@@ -1,21 +1,9 @@
-import { Button, Typography } from "@mui/material";
+import { Button, styled } from "@mui/material";
 
-const StyledButton = () => {
-  return (
-    <Button
-      variant="contained"
-      sx={{
-        borderRadius: 8,
-        textTransform: "none",
-        display: 'block'
-      }}
-      type="submit"
-    >
-      <Typography component="span" variant="subtitle1">
-        Submit
-      </Typography>
-    </Button>
-  );
-};
+const StyledButton = styled(Button)(() => ({
+  borderRadius: 20,
+  textTransform: "none",
+  display: "block",
+}));
 
 export default StyledButton;

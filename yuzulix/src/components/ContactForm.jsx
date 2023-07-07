@@ -60,7 +60,7 @@ const ContactForm = () => {
         margin="normal"
         rows={4}
       />
-      <StyledButton />
+      <StyledButton variant="contained" type="submit">Submit</StyledButton>
     </form>
   );
 };
