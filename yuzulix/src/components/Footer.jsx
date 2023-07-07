@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Paper } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import logo from "../assets/nabepero-logo.png";
@@ -8,9 +8,10 @@ const Footer = () => {
   return (
     <Box
       component="footer"
+      
       sx={{ position: "absolute", bottom: "0", height: "2rem" }}
     >
-      <Box
+      <Paper
         sx={{
           display: "flex",
           justifyContent: "center",
@@ -21,6 +22,7 @@ const Footer = () => {
           width: "100vw",
           left: "calc(-50vw + 50%)",
         }}
+        elevation={10}
       >
         <Box>
           <Link style={{ textDecoration: "none" }} to={"/Home"}>
@@ -35,7 +37,7 @@ const Footer = () => {
             <FacebookIcon />
           </MuiLink>
         </Box>
-      </Box>
+      </Paper>
     </Box>
   );
 };
