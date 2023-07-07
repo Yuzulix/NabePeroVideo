@@ -1,11 +1,12 @@
 import { useForm } from "react-hook-form";
-import { TextField } from "@mui/material";
+import { Box, TextField } from "@mui/material";
 import StyledButton from "./Button";
 const ContactForm = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    reset,
+    formState: { errors, isSubmitSuccessful },
   } = useForm({
     email: "",
     subject: "",
@@ -14,6 +15,7 @@ const ContactForm = () => {
 
   const onSubmit = (data) => {
     console.log("CONTACT FORM DATA", data);
+    setTimeout(() => reset(), 2000)
   };
 
   return (
@@ -60,7 +62,10 @@ const ContactForm = () => {
         margin="normal"
         rows={4}
       />
-      <StyledButton variant="contained" type="submit">Submit</StyledButton>
+      <StyledButton variant="contained" type="submit">
+        Submit
+      </StyledButton>
+      {isSubmitSuccessful && <Box>Submited, Thank you</Box>}
     </form>
   );
 };
