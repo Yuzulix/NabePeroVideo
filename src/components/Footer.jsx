@@ -16,10 +16,10 @@ const Footer = () => {
         sx={{
           display: "flex",
           justifyContent: "center",
-          gap: 12,
+          gap: 6,
           borderTop: "1px solid",
           borderColor: "secondary.main",
-          padding: 4,
+          pt: 2,
           width: "100vw",
           left: "calc(-50vw + 50%)",
         }}
