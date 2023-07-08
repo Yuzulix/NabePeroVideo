@@ -15,7 +15,7 @@ function SimpleAppBar() {
         <Toolbar>
           <Box sx={{ flexGrow: 1 }}>
             <Link style={{ textDecoration: "none" }} to={"/Home"}>
-              <img src={logo} alt="logo" width={200} className="classes.logo" />
+              <img src={logo} alt="logo" width={200} />
             </Link>
           </Box>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>

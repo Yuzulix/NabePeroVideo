@@ -1,15 +1,14 @@
 import Box from "@mui/material/Box";
-import Paper from '@mui/material/Paper'
+import Paper from "@mui/material/Paper";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import logo from "../assets/nabepero-logo.png";
+import logo from "../assets/np-symbol.png";
 import MuiLink from "@mui/material/Link";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <Box
       component="footer"
-      
       sx={{ position: "absolute", bottom: "0", height: "2rem" }}
     >
       <Paper
@@ -27,7 +26,7 @@ const Footer = () => {
       >
         <Box>
           <Link style={{ textDecoration: "none" }} to={"/Home"}>
-            <img src={logo} alt="logo" width={200} className="classes.logo" />
+            <img src={logo} alt="logo" style={{ width: 100 }} />
           </Link>
         </Box>
         <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
