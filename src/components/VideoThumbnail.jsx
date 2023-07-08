@@ -1,16 +1,9 @@
-import { useState } from "react";
 import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
 import GlassBox from "./GlassBox";
 import PlayArrowRoundedIcon from "@mui/icons-material/PlayArrowRounded";
-import Fade from "@mui/material/Fade";
 
 const VideoThumbnail = (props) => {
-  const [hovered, setHovered] = useState(false);
-
-  const handleChange = () => {
-    setHovered((prev) => !prev);
-  };
 
   function getRandomInt(max) {
     return Math.floor(Math.random() * max);
@@ -27,11 +20,8 @@ const VideoThumbnail = (props) => {
         )}deg, #323232 0%,#6DB193 50%, #F4E5C2 100%)`,
         borderRadius: "5px",
       }}
-      onMouseEnter={handleChange}
-      onMouseLeave={handleChange}
       role="button"
     >
-      <Fade in={hovered}>
         <GlassBox
           sx={{
             position: "absolute",
@@ -51,7 +41,6 @@ const VideoThumbnail = (props) => {
             sx={{ fontSize: 40 }}
           />
         </GlassBox>
-      </Fade>
       <img
         src="https://picsum.photos/1280/720"
         alt=""
