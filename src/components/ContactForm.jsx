@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import StyledButton from "./Button";
+
 const ContactForm = () => {
   const {
     register,
@@ -15,6 +16,8 @@ const ContactForm = () => {
   });
 
   const onSubmit = (data) => {
+    fetch('/.netlify/functions/sendMail').then(res => console.log('Mail sent', res.status))
+
     console.log("CONTACT FORM DATA", data);
     setTimeout(() => reset(), 2000);
   };
