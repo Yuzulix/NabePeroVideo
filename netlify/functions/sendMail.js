@@ -3,15 +3,15 @@ const nodemailer = require("nodemailer");
 const transporter = nodemailer.createTransport({
   service: "Gmail",
   auth: {
-    user: process.env.GAMIL_ADDR,
+    user: process.env.GMAIL_ADDR,
     pass: process.env.GMAIL_PASS,
   },
 });
 
 exports.handler = async function (event) {
   const info = await transporter.sendMail({
-    from: `NabePero Video Site ${process.env.GAMIL_ADDR}`, // sender address
-    to: process.env.GAMIL_ADDR, // list of receivers
+    from: `NabePero Video Site ${process.env.GMAIL_ADDR}`, // sender address
+    to: process.env.GMAIL_ADDR, // list of receivers
     subject: "Hello ✔", // Subject line
     text: "Hello world?", // plain text body
     html: "<b>Hello world?</b>", // html body
