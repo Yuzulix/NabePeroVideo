@@ -6,7 +6,8 @@ const Contact = () => {
     <Box
       sx={{
         display: "flex",
-        flexDirection: { xs: "column", sm: "row" },
+        flexDirection: { xs: "column", sm: "column", md: "row" },
+        paddingTop: 1,
       }}
     >
       <Box
@@ -16,11 +17,19 @@ const Contact = () => {
           padding: 1,
         }}
       >
-        <Typography variant="h4" component='h1' textAlign='center'>Send us an email!</Typography>
-        <Typography variant="subtitle1" component='p' textAlign='center'></Typography>
-        <Typography variant="subtitle1" component='p' textAlign='center'>Please!</Typography>
+        <Typography variant="h4" component="h1" textAlign="center">
+          Send us an email!
+        </Typography>
+        <Typography
+          variant="subtitle1"
+          component="p"
+          textAlign="center"
+        ></Typography>
+        <Typography variant="subtitle1" component="p" textAlign="center">
+          Please!
+        </Typography>
       </Box>
-      <Box sx={{}}>
+      <Box sx={{ width: 450 }}>
         <ContactForm />
       </Box>
     </Box>

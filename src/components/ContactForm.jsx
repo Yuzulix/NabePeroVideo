@@ -64,7 +64,7 @@ const ContactForm = () => {
         rows={4}
       />
       <StyledButton variant="contained" type="submit">
-        Submit
+        Send It
       </StyledButton>
       {isSubmitSuccessful && <Box>Submited, Thank you</Box>}
     </form>
