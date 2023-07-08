@@ -1,4 +1,4 @@
-const nodemailer = require("nodemailer");
+import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
   service: "Gmail",
@@ -8,22 +8,24 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-exports.handler = async function (event) {
+export const handler = async function (event) {
   const { email, subject, message } = JSON.parse(event.body);
-  const info = await transporter.sendMail({
-    from: `NabePero Video Site ${process.env.GMAIL_ADDR}`, // sender address
-    to: process.env.GMAIL_ADDR, // list of receivers
-    subject: subject, // Subject line
-    text: `
-    FROM: ${email}
-    MESSAGE: ${message}
-    `, // plain text body
-  });
+  try {
+    const info = await transporter.sendMail({
+      from: `NabePero Video Site ${process.env.GMAIL_ADDR}`,
+      to: process.env.GMAIL_ADDR,
+      subject: subject,
+      text: `
+      FROM: ${email}
+      MESSAGE: ${message}
+      `,
+    });
 
-  console.log("Message sent: %s", info.messageId);
-  console.log("Body sent: %s", event.body);
-  return {
-    statusCode: 200,
-    body: JSON.stringify({ messageID: info.messageId }),
-  };
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ messageID: info.messageId }),
+    };
+  } catch (error) {
+    return { statusCode: 500, body: error.toString() };
+  }
 };

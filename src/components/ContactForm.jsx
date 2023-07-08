@@ -22,7 +22,9 @@ const ContactForm = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
-    }).then((res) => console.log("Mail sent", res.status));
+    })
+      .then((res) => console.log("Mail sent", res.status))
+      .catch((error) => console.error(error));
 
     console.log("CONTACT FORM DATA", data);
     setTimeout(() => reset(), 2000);
