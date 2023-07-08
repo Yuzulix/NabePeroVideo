@@ -32,8 +32,6 @@ export default function TemporaryDrawer() {
           position: "fixed",
           top: 10,
           right: 16,
-          // backgroundColor: "primary.main",
-          // color: "white",
           borderRadius: 1,
           visibility: { xs: "visible", sm: "hidden" },
           "&:hover": {
@@ -47,7 +45,7 @@ export default function TemporaryDrawer() {
       <Drawer anchor="top" open={state} onClose={toggleDrawer(false)}>
         <List>
           {navItems.map((item) => (
-            <Link key={item} style={style} to={`/${item}`}>
+            <Link key={item} style={style} to={`/${item}`} onClick={toggleDrawer(false)}>
               <ListItem>
                 <ListItemButton>
                   <ListItemText primary={`${item}`} />
