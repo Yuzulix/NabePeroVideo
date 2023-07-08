@@ -13,7 +13,7 @@ export default function VideoModal() {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: {xs: 450, sm: 550, md: 800},
+    width: {xs: 350, sm: 550, md: 800},
     bgcolor: "background.paper",
     border: "2px solid #000",
     boxShadow: 24,
