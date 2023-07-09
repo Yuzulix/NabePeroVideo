@@ -6,30 +6,26 @@ const Contact = () => {
     <Box
       sx={{
         display: "flex",
-        flexDirection: { xs: "column", sm: "column", md: "row" },
+        flexDirection: { xs: "column", sm: "row" },
         paddingTop: 1,
+        margin: 1,
       }}
     >
       <Box
         sx={{
           width: { xs: "100%", sm: "50%" },
-          margin: { xs: "2 0", sm: 2 },
+          margin: "2 0",
           padding: 1,
         }}
       >
-        <Typography variant="h4" component="h1" textAlign="center">
+        <Typography variant="h4" component="h1">
           Send us an email!
         </Typography>
-        <Typography
-          variant="subtitle1"
-          component="p"
-          textAlign="center"
-        ></Typography>
-        <Typography variant="subtitle1" component="p" textAlign="center">
+        <Typography variant="subtitle1" component="p">
           Please!
         </Typography>
       </Box>
-      <Box sx={{ width: 450 }}>
+      <Box>
         <ContactForm />
       </Box>
     </Box>
