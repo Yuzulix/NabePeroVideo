@@ -30,10 +30,10 @@ const Footer = () => {
           </Link>
         </Box>
         <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
-          <MuiLink href="https://www.instagram.com/nabepero_ph/">
+          <MuiLink href="https://www.instagram.com/nabepero_ph/" aria-label="Instagram Link">
             <InstagramIcon />
           </MuiLink>
-          <MuiLink href="https://www.facebook.com/profile.php?id=100063795950849">
+          <MuiLink href="https://www.facebook.com/profile.php?id=100063795950849" aria-label="Facebook Link">
             <FacebookIcon />
           </MuiLink>
         </Box>
