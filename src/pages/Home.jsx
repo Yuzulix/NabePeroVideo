@@ -14,10 +14,10 @@ const Home = () => (
           color: 'white'
         }}
       >
-        <Typography variant="h4" component="h1">
+        <Typography variant="h4" component="h1" color='black'>
           Lorem ipsum.
         </Typography>
-        <Typography variant="body1" component="p">
+        <Typography variant="body1" component="p" color='black'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
           adipisci, earum at rem dicta in.
         </Typography>
