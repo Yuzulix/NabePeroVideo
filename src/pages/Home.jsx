@@ -1,5 +1,5 @@
-import { Box, Grid, Typography } from "@mui/material";
-import VideoCard from "../components/VideoCard";
+import { Box, Typography } from "@mui/material";
+import VideoGrid from "../components/videoGrid/VideoGrid";
 
 const Home = () => (
   <>
@@ -22,23 +22,7 @@ const Home = () => (
           adipisci, earum at rem dicta in.
         </Typography>
       </Box>
-      <Grid component="section" container spacing={{ xs: 1, md: 6 }}>
-        <Grid item xs={12} md={4}>
-          <VideoCard />
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <VideoCard />
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <VideoCard />
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <VideoCard />
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <VideoCard />
-        </Grid>
-      </Grid>
+      <VideoGrid/>
   </>
 );
 

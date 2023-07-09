@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
-import GlassBox from "./GlassBox";
+import GlassBox from "../GlassBox";
 import PlayArrowRoundedIcon from "@mui/icons-material/PlayArrowRounded";
 
 const VideoThumbnail = (props) => {
