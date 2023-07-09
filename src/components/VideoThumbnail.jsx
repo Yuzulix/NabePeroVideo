@@ -21,6 +21,7 @@ const VideoThumbnail = (props) => {
         borderRadius: "5px",
       }}
       role="button"
+      aria-aria-label="Play Video"
     >
         <GlassBox
           sx={{

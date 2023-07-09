@@ -39,13 +39,19 @@ export default function TemporaryDrawer() {
           },
         }}
         onClick={toggleDrawer(true)}
+        aria-label="Menu"
       >
         <MenuIcon />
       </IconButton>
       <Drawer anchor="top" open={state} onClose={toggleDrawer(false)}>
         <List>
           {navItems.map((item) => (
-            <Link key={item} style={style} to={`/${item}`} onClick={toggleDrawer(false)}>
+            <Link
+              key={item}
+              style={style}
+              to={`/${item}`}
+              onClick={toggleDrawer(false)}
+            >
               <ListItem>
                 <ListItemButton>
                   <ListItemText primary={`${item}`} />
