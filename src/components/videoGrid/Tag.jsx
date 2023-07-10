@@ -13,12 +13,13 @@ const Tag = ({ tag, onClick }) => {
   return (
     <Chip
       label={tag}
-      color="primary"
+      color={isActive ? "accent" : "default"}
+      variant={isActive ? "filled" : "outlined"}
       onDelete={
         isActive
           ? () => {
               toggleActive();
-              onClick();
+              onClick(tag);
             }
           : null
       }
