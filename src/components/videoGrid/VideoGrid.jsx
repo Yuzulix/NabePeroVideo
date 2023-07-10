@@ -1,34 +1,45 @@
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import VideoCard from "./VideoCard";
-import Chip from "@mui/material/Chip";
-import { useState } from "react";
-import DoneIcon from "@mui/icons-material/Done";
+import { useContext, useState, useEffect } from "react";
+import VideoContext from "./VideoContext";
+import Tag from "./Tag";
 
 const VideoGrid = () => {
-  const [chips, setChips] = useState([
-    { key: 0, label: "Reaction", show: false },
-    { key: 1, label: "TikTok", show: false },
-    { key: 2, label: "YouTube Shorts", show: false },
-    { key: 3, label: "eLearning", show: false },
-    { key: 4, label: "Opening/Closing", show: false },
-    { key: 5, label: "Marketing", show: false },
-    { key: 6, label: "Anime", show: false },
-  ]);
-  const handleClick = (chipToChange) => {
-    const newChips = chips.map((c) =>
-      c.key === chipToChange.key
-        ? { ...chipToChange, show: !chipToChange.show }
-        : c
-    );
-    setChips(newChips);
-  };
+  const videos = useContext(VideoContext);
+  const tags = [
+    "All",
+    "Reaction",
+    "TikTiok",
+    "YouTube Shorts",
+    "eLearning",
+    "Opening/Closing",
+    "Marketing",
+    "Anime",
+  ];
 
-  const handleClear = () => {
-    const newChips = chips.map((c) => ({ ...c, show: false }));
-    setChips(newChips);
-  };
-  
+  const [filterList, setFilterList] = useState([]);
+  const [renderList, setRenderList] = useState([videos]);
+
+  useEffect(() => {
+    if (!filterList === undefined || !filterList.length < 1) {
+      let filtered = [];
+      videos.forEach((video) => {
+        video.tags.forEach((tag) => {
+          if (filterList.includes(tag)) {
+            if (!filtered.includes(video)) {
+              filtered.push(video);
+            }
+          }
+        });
+      });
+      setRenderList(filtered);
+    } else {
+      setRenderList(videos);
+    }
+  }, [filterList]);
+
+
   return (
     <>
       <Stack
@@ -38,34 +49,28 @@ const VideoGrid = () => {
         useFlexGap
         flexWrap="wrap"
       >
-        <Chip label="Clear Filters" color="primary" onClick={handleClear} />
-        {chips.map((chip) => (
-          <Chip
-            key={chip.key}
-            label={chip.label}
-            color="primary"
-            onDelete={chip.show ? () => handleClick(chip) : null}
-            onClick={() => handleClick(chip)}
-            deleteIcon={<DoneIcon />}
-          />
-        ))}
+        {tags.map((tag) => {
+          return (
+            <Tag
+              key={tag}
+              tag={tag}
+              onClick={() => {
+                if (!filterList.includes(tag)) {
+                  setFilterList((filterList) => [...filterList, tag]);
+                } else {
+                  setFilterList(filterList.filter((t) => t !== tag));
+                }
+              }}
+            />
+          );
+        })}
       </Stack>
       <Grid component="section" container spacing={{ xs: 1, md: 6 }}>
-        <Grid item xs={12} md={4}>
-          <VideoCard />
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <VideoCard />
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <VideoCard />
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <VideoCard />
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <VideoCard />
-        </Grid>
+        {renderList.map((video, i) => (
+          <Grid item xs={12} md={4} key={i}>
+            <VideoCard title={`${video.title}, ${video.categories}`} />
+          </Grid>
+        ))}
       </Grid>
     </>
   );
