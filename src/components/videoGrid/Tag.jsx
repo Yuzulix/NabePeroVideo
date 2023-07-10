@@ -1,6 +1,7 @@
 import Chip from "@mui/material/Chip";
 import DoneIcon from "@mui/icons-material/Done";
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 const Tag = ({ tag, onClick }) => {
   const [isActive, setActive] = useState(false);
@@ -23,7 +24,7 @@ const Tag = ({ tag, onClick }) => {
       }
       onClick={() => {
         toggleActive();
-        onClick();
+        onClick(tag);
       }}
       deleteIcon={<DoneIcon />}
     />
@@ -31,3 +32,8 @@ const Tag = ({ tag, onClick }) => {
 };
 
 export default Tag;
+
+Tag.propTypes = {
+  tag: PropTypes.string,
+  onClick: PropTypes.func,
+};

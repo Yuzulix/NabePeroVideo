@@ -8,7 +8,6 @@ import Tag from "./Tag";
 const VideoGrid = () => {
   const videos = useContext(VideoContext);
   const tags = [
-    "All",
     "Reaction",
     "TikTiok",
     "YouTube Shorts",
@@ -22,23 +21,28 @@ const VideoGrid = () => {
   const [renderList, setRenderList] = useState([videos]);
 
   useEffect(() => {
-    if (!filterList === undefined || !filterList.length < 1) {
-      let filtered = [];
+    if (filterList.length === 0) {
+      setRenderList(videos);
+    } else {
+      const filtered = [];
       videos.forEach((video) => {
         video.tags.forEach((tag) => {
-          if (filterList.includes(tag)) {
-            if (!filtered.includes(video)) {
-              filtered.push(video);
-            }
+          if (filterList.includes(tag) && !filtered.includes(video)) {
+            filtered.push(video);
           }
         });
       });
       setRenderList(filtered);
-    } else {
-      setRenderList(videos);
     }
-  }, [filterList]);
+  }, [videos, filterList]);
 
+  const handleClick = (clickedTag) => {
+    if (filterList.includes(clickedTag)) {
+      setFilterList(filterList.filter((e) => e !== clickedTag));
+    } else {
+      setFilterList([...filterList, clickedTag]);
+    }
+  };
 
   return (
     <>
@@ -50,19 +54,7 @@ const VideoGrid = () => {
         flexWrap="wrap"
       >
         {tags.map((tag) => {
-          return (
-            <Tag
-              key={tag}
-              tag={tag}
-              onClick={() => {
-                if (!filterList.includes(tag)) {
-                  setFilterList((filterList) => [...filterList, tag]);
-                } else {
-                  setFilterList(filterList.filter((t) => t !== tag));
-                }
-              }}
-            />
-          );
+          return <Tag key={tag} tag={tag} onClick={() => handleClick(tag)} />;
         })}
       </Stack>
       <Grid component="section" container spacing={{ xs: 1, md: 6 }}>
