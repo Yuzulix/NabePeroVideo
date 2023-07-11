@@ -12,7 +12,6 @@ const theme = createTheme({
     },
   },
   palette: {
-    mode: "light",
     primary: {
       main: "#6DB193",
     },
@@ -20,10 +19,10 @@ const theme = createTheme({
       main: "#6db193",
     },
     accent: {
-      main: '#EDE9DD'
-    },
-    light: {
-      main: "#fcf4d9",
+      light: '#faf5e7',
+      main: '#F4E5C2',
+      dark: '#efc361',
+      contrastText: 'rgba(0, 0, 0, 0.87)',
     },
     error: {
       main: "#c07791",
