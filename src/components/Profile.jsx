@@ -19,23 +19,27 @@ const Profile = ({ profile }) => {
           />
         </Box>
         <Box sx={{}}>
-          <Typography variant="h5" component="h3">
+          <Typography variant="h5" component="h3" sx={{ fontWeight: "bold" }}>
             {profile.name}
           </Typography>
-          <Typography variant="subtitle1" component="p" sx={{py: 1}}>
-              {profile.title}
-            </Typography>
+          <Typography variant="subtitle2" component="p" sx={{}}>
+            {profile.title}
+          </Typography>
           {profile.bio.map((p, i) => (
-            <Typography key={i} variant="body1" component="p" sx={{py: 1}}>
+            <Typography key={i} variant="body2" component="p" sx={{ pt: 2 }}>
               {p}
             </Typography>
           ))}
           {profile.languages.map((p, i) => (
-            <Typography key={i} variant="body1" component="span" sx={{paddingRight: 1}}>
+            <Typography
+              key={i}
+              variant="caption"
+              component="span"
+              sx={{ paddingRight: 1 }}
+            >
               {p}
             </Typography>
           ))}
-          
         </Box>
       </Box>
     </>
