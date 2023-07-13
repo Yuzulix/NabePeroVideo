@@ -3,16 +3,10 @@ import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 let theme = createTheme({
   typography: {
     fontFamily: [
-      "-apple-system",
-      "BlinkMacSystemFont",
-      '"Segoe UI"',
+      "'Public Sans'",
       "Roboto",
-      '"Helvetica Neue"',
-      "Arial",
+      "-apple-system",
       "sans-serif",
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
     ].join(","),
   },
   components: {
