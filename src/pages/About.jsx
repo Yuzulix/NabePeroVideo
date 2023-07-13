@@ -19,11 +19,28 @@ const About = () => {
         }}
       >
         <Typography variant="h4" component="h1" color="black">
-          Lorem ipsum.
+          Meet our team!
         </Typography>
-        <Typography variant="body1" component="p" color="black">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-          adipisci, earum at rem dicta in.
+        <Typography
+          variant="subtitle1"
+          component="p"
+          color="black"
+          sx={{ pt: 1, maxWidth: 450 }}
+        >
+          NabePero Post Production Team is a dynamic and diverse video editing
+          team that combines the skills of Japanese and English bilingual
+          professionals. 
+        </Typography>
+        <Typography
+          variant="subtitle1"
+          component="p"
+          color="black"
+          sx={{ pt: 1, maxWidth: 450 }}
+        >
+          With a passion for visual storytelling, we bring a
+          unique cross-cultural perspective to our projects, ensuring
+          exceptional quality and effective communication with a global
+          audience.
         </Typography>
       </Box>
       <Box
