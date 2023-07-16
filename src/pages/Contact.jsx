@@ -5,24 +5,21 @@ const Contact = () => {
   return (
     <Box
       sx={{
-        display: "flex",
-        flexDirection: { xs: "column", sm: "row" },
         paddingTop: 1,
         margin: 1,
       }}
     >
       <Box
         sx={{
-          width: { xs: "100%", sm: "50%" },
           margin: "2 0",
           padding: 1,
         }}
       >
         <Typography variant="h4" component="h1">
-          Send us an email!
+          Send us an enquiry!
         </Typography>
         <Typography variant="subtitle1" component="p">
-          Please!
+          Someone from the team will respond within 48 hours.
         </Typography>
       </Box>
       <Box>
