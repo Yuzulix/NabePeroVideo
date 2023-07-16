@@ -18,7 +18,7 @@ const About = () => {
           color: "white",
         }}
       >
-        <Typography variant="h2" component="h1" color="black">
+        <Typography variant="h4" component="h1" color="black">
           Meet our team!
         </Typography>
         <Typography
