@@ -18,24 +18,24 @@ const About = () => {
           color: "white",
         }}
       >
-        <Typography variant="h4" component="h1" color="black">
+        <Typography variant="h2" component="h1" color="black">
           Meet our team!
         </Typography>
         <Typography
-          variant="subtitle1"
+          variant="h5"
           component="p"
           color="black"
-          sx={{ pt: 1, maxWidth: 450 }}
+          sx={{ pt: 1, fontWeight: 'light' }}
         >
           The Nabepero Post Production team is a dynamic and diverse video
           editing team that combines the skills of Japanese and English
-          bilingual professionals
+          bilingual professionals.
         </Typography>
         <Typography
-          variant="subtitle1"
+          variant="h5"
           component="p"
           color="black"
-          sx={{ pt: 1, maxWidth: 450 }}
+          sx={{ pt: 1, fontWeight: 'light' }}
         >
           With a passion for constantly curating their skills, we bring a unique
           cross-cultural perspective to our projects, ensuring exceptional
