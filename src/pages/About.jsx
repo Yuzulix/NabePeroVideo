@@ -27,9 +27,9 @@ const About = () => {
           color="black"
           sx={{ pt: 1, maxWidth: 450 }}
         >
-          NabePero Post Production Team is a dynamic and diverse video editing
-          team that combines the skills of Japanese and English bilingual
-          professionals. 
+          The Nabepero Post Production team is a dynamic and diverse video
+          editing team that combines the skills of Japanese and English
+          bilingual professionals
         </Typography>
         <Typography
           variant="subtitle1"
@@ -37,10 +37,9 @@ const About = () => {
           color="black"
           sx={{ pt: 1, maxWidth: 450 }}
         >
-          With a passion for visual storytelling, we bring a
-          unique cross-cultural perspective to our projects, ensuring
-          exceptional quality and effective communication with a global
-          audience.
+          With a passion for constantly curating their skills, we bring a unique
+          cross-cultural perspective to our projects, ensuring exceptional
+          quality and effective communication with a global audience.
         </Typography>
       </Box>
       <Box

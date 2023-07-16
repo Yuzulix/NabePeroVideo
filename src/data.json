@@ -1,6 +1,32 @@
 {
     "profiles": [
         {
+            "name": "Chihiro",
+            "title": "Community Manager",
+            "languages": [
+                "English",
+                "Japanese"
+            ],
+            "bio": [
+                "The original founder of Nabepero Post Production Team, along with her college friend.",
+                "Lives in San Diego, California with a one-orange-braincell cat.",
+                "Passionate about contributing to people's success through video editing."
+            ]
+        },
+        {
+            "name": "Kotone",
+            "title": "Team Manager",
+            "languages": [
+                "English",
+                "Japanese"
+            ],
+            "bio": [
+                "Rad manager of the editing team who has been living in the Philippines for over 5 years.",
+                "Exceptional at translating Japanese to English and vice versa.",
+                "Has 5 cats and is especially in love with her siamese cat named Roxy."
+            ]
+        },
+        {
             "name": "Mai",
             "title": "Lead Editor",
             "languages": [
@@ -8,52 +34,9 @@
                 "Japanese"
             ],
             "bio": [
-                "Growing up, I enjoyed watching fan-made music videos of my favourite films and TV shows. I was amazed at how people were able to make new narratives with the limited material they had and sometimes even make the emotional moments in the shows even more hard-hitting with their music and editing choices.",
-                "Narrative editing",
-                "Learn special effects for film and better non-linear storytelling techniques",
-                "I enjoy learning languages, shooting analogue film, and attending local film festivals that showcase Philippine regional cinema."
-            ]
-        },
-        {
-            "name": "Gley",
-            "title": "Video Editor",
-            "languages": [
-                "English",
-                "Japanese"
-            ],
-            "bio": [
-                "I love watching how my favorite vloggers in YouTube and Tiktok do their vlogs. I admire how they film and express themselves through videos.",
-                "MV, Marketing (Product Promotion and Event Invitation)",
-                "Graphic Animation and Typography",
-                "My hobbies are reading romance, thriller and mystery novels, crocheting, pilates and watching documentaries, Kdramas, Jdramas and anime."
-            ]
-        },
-        {
-            "name": "Nino",
-            "title": "Video Editor",
-            "languages": [
-                "English",
-                "Japanese"
-            ],
-            "bio": [
-                "Watching documentaries, films, and some video blogs. It made me tried to do some video editing also.",
-                "Promotion video/ events video higlights",
-                "Cinematic videos, Motion graphics",
-                "I love making and listening to music, baking and photographs. I also like watching anime."
-            ]
-        },
-        {
-            "name": "Angelica",
-            "title": "Video Editor",
-            "languages": [
-                "English",
-                "Japanese"
-            ],
-            "bio": [
-                "I admire illustrators and animators like Sidu (しづ), RAHWIA and Mogelatte (モゲラッタ). Recently, I've been watching YouTube channels like Jyanino Channel (ジャにのちゃんねる), Leo's Playground (レオの遊び場) and Paradox Live. I think their video contents are interesting.",
-                "Mixed Media and Social Content",
-                "I want to develop a solid foundation in making contents like motion graphics and how to come up with a seamless storyboard for presentation.",
-                "My hobbies are reading romance, thriller and mystery novels, crocheting, pilates and watching documentaries, Kdramas, Jdramas and anime."
+                "Our friendly lead editor with remarkable editing skills that we are proud of.",
+                "Advancing her skills in special effects for film and non-linear storytelling techniques.",
+                "Enjoys learning languages, shooting analogue film, and attending local film festivals that showcase the Filipino regional cinema."
             ]
         },
         {
@@ -64,10 +47,48 @@
                 "Japanese"
             ],
             "bio": [
-                "I love films, especially by Stanley Kubrick and David Lynch, and I wanted to understand their visual aesthetics more.",
-                "Creative editing and color grading",
-                "3D animation",
-                "CrossFit"
+                "Our Chief Editor who excels in After Effects and motion graphics.",
+                "Has been working on 3D animation projects recently.",
+                "In his free time, he is into CrossFit where he pushes himself to the limit."
+            ]
+        },
+        {
+            "name": "Gley",
+            "title": "Video Editor",
+            "languages": [
+                "English",
+                "Japanese"
+            ],
+            "bio": [
+                "Newest member and fastest learner on the team!",
+                "Graphic Animation and Typography are 3 skills she is focusing on developing right now.",
+                "Her hobbies are reading romance, thriller and mystery novels, crocheting and pilates."
+            ]
+        },
+        {
+            "name": "Nino",
+            "title": "Video Editor",
+            "languages": [
+                "English",
+                "Japanese"
+            ],
+            "bio": [
+                "Great at creative editing especially in the field of anime.",
+                "Enjoying expanding skills on cinematic editing and motion graphics currently.",
+                "Loves making and listening to music, baking, photography, and... anime!"
+            ]
+        },
+        {
+            "name": "Angelica",
+            "title": "Video Editor",
+            "languages": [
+                "English",
+                "Japanese"
+            ],
+            "bio": [
+                "All-round player with an output that always exceeds our expectations.",
+                "Developing a solid foundation in making contents like motion graphics and how to come up with a seamless storyboard for presentation.",
+                "Her hobbies include reading C-novels, K-novels, Japanese manga, and Korean webtoons."
             ]
         }
     ]
