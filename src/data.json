@@ -1,0 +1,103 @@
+{
+    "profiles": [
+        {
+            "name": "Chihiro",
+            "title": "Community Manager",
+            "languages": [
+                "English",
+                "Japanese"
+            ],
+            "bio": [
+                "The original founder of Nabepero Post Production Team, along with her college friend.",
+                "Lives in San Diego, California with a one-orange-braincell cat.",
+                "Passionate about contributing to people's success through video editing."
+            ]
+        },
+        {
+            "name": "Kotone",
+            "title": "Team Manager",
+            "languages": [
+                "English",
+                "Japanese",
+                "Bisaya"
+            ],
+            "bio": [
+                "Rad manager of the editing team who has been living in the Philippines for over 5 years.",
+                "Exceptional at translating Japanese to English and vice versa.",
+                "Has 5 cats and is especially in love with her siamese cat named Roxy."
+            ]
+        },
+        {
+            "name": "Ryosei",
+            "title": "Chief Editor",
+            "languages": [
+                "English",
+                "Japanese"
+            ],
+            "bio": [
+                "Our Chief Editor who excels in After Effects and motion graphics.",
+                "Has been working on 3D animation projects recently.",
+                "In his free time, he is into CrossFit where he pushes himself to the limit."
+            ]
+        },
+        {
+            "name": "Mai",
+            "title": "Lead Editor",
+            "languages": [
+                "English",
+                "Japanese",
+                "Bisaya",
+                "Tagalog"
+            ],
+            "bio": [
+                "Our friendly lead editor with remarkable editing skills that we are proud of.",
+                "Advancing her skills in special effects for film and non-linear storytelling techniques.",
+                "Enjoys learning languages, shooting analogue film, and attending local film festivals that showcase the Filipino regional cinema."
+            ]
+        },
+        {
+            "name": "Nino",
+            "title": "Video Editor",
+            "languages": [
+                "English",
+                "Japanese",
+                "Bisaya",
+                "Tagalog"
+            ],
+            "bio": [
+                "Great at creative editing especially in the field of anime.",
+                "Enjoying expanding skills on cinematic editing and motion graphics currently.",
+                "Loves making and listening to music, baking, photography, and... anime!"
+            ]
+        },
+        {
+            "name": "Angelica",
+            "title": "Video Editor",
+            "languages": [
+                "English",
+                "Japanese",
+                "Tagalog"
+            ],
+            "bio": [
+                "All-round player with an output that always exceeds our expectations.",
+                "Developing a solid foundation in making contents like motion graphics and how to come up with a seamless storyboard for presentation.",
+                "Her hobbies include reading C-novels, K-novels, Japanese manga, and Korean webtoons."
+            ]
+        },
+        {
+            "name": "Gley",
+            "title": "Video Editor",
+            "languages": [
+                "English",
+                "Japanese",
+                "Bisaya",
+                "Tagalog"
+            ],
+            "bio": [
+                "Newest member and fastest learner on the team!",
+                "Graphic Animation and Typography are 3 skills she is focusing on developing right now.",
+                "Her hobbies are reading romance, thriller and mystery novels, crocheting and pilates."
+            ]
+        }
+    ]
+}

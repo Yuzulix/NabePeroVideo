@@ -1,6 +1,14 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
-const theme = createTheme({
+let theme = createTheme({
+  typography: {
+    fontFamily: [
+      "'Public Sans'",
+      "Roboto",
+      "-apple-system",
+      "sans-serif",
+    ].join(","),
+  },
   components: {
     MuiButton: {
       styleOverrides: {
@@ -19,15 +27,17 @@ const theme = createTheme({
       main: "#6db193",
     },
     accent: {
-      light: '#faf5e7',
-      main: '#F4E5C2',
-      dark: '#efc361',
-      contrastText: 'rgba(0, 0, 0, 0.87)',
+      light: "#faf5e7",
+      main: "#F4E5C2",
+      dark: "#efc361",
+      contrastText: "rgba(0, 0, 0, 0.87)",
     },
     error: {
       main: "#c07791",
     },
   },
 });
+
+theme = responsiveFontSizes(theme);
 
 export default theme;

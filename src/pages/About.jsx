@@ -1,38 +1,7 @@
 import { Box, Typography } from "@mui/material";
-
-import PropTypes from "prop-types";
-
-const names = ["smile", "chihiro", "nabe", "meruert"];
-
-const Profile = ({ name }) => (
-  <>
-    <Box sx={{}}>
-      <Box>
-        <img
-          src="https://picsum.photos/800/900"
-          alt="team member image"
-          style={{
-            width: "100%",
-            objectFit: "cover",
-          }}
-        />
-      </Box>
-      <Box sx={{}}>
-        <Typography variant="h5" component="h3">
-          {name}
-        </Typography>
-        <Typography variant="body1" component="p">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quae
-          possimus. Assumenda animi odio tempora, sed officia ea unde soluta!
-        </Typography>
-      </Box>
-    </Box>
-  </>
-);
-
-Profile.propTypes = {
-  name: PropTypes.string,
-};
+import Profile from "../components/Profile";
+// const names = ["smile", "chihiro", "nabe", "meruert"];
+import db from "../data.json";
 
 const About = () => {
   return (
@@ -49,24 +18,40 @@ const About = () => {
           color: "white",
         }}
       >
-        <Typography variant="h4" component="h1" color='black'>
-          Lorem ipsum.
+        <Typography variant="h4" component="h1" color="black">
+          Meet our team!
         </Typography>
-        <Typography variant="body1" component="p" color='black'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-          adipisci, earum at rem dicta in.
+        <Typography
+          variant="h5"
+          component="p"
+          color="black"
+          sx={{ pt: 1, fontWeight: 'light' }}
+        >
+          The Nabepero Post Production team is a dynamic and diverse video
+          editing team that combines the skills of Japanese and English
+          bilingual professionals.
+        </Typography>
+        <Typography
+          variant="h5"
+          component="p"
+          color="black"
+          sx={{ pt: 1, fontWeight: 'light' }}
+        >
+          With a passion for constantly curating their skills, we bring a unique
+          cross-cultural perspective to our projects, ensuring exceptional
+          quality and effective communication with a global audience.
         </Typography>
       </Box>
       <Box
         sx={{
           display: "grid",
-          gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr 1fr" },
+          gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr", md: "1fr 1fr 1fr" },
           gap: 5,
         }}
         component="section"
       >
-        {names.map((name, i) => (
-          <Profile key={i} name={name} />
+        {db.profiles.map((profile, i) => (
+          <Profile key={i} profile={profile} />
         ))}
       </Box>
     </>
