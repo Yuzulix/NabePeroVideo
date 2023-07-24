@@ -60,7 +60,7 @@ const VideoGrid = () => {
       <Grid component="section" container spacing={{ xs: 1, md: 6 }}>
         {renderList.map((video, i) => (
           <Grid item xs={12} md={4} key={i}>
-            <VideoCard title={`${video.title}, ${video.categories}`} />
+            <VideoCard title={`${video.title}`} />
           </Grid>
         ))}
       </Grid>
