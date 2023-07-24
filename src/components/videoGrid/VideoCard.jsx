@@ -1,6 +1,7 @@
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import VideoModal from "./VideoModal";
+import PropTypes from "prop-types";
 
 const VideoCard = ({title}) => (
   <>
@@ -17,5 +18,9 @@ const VideoCard = ({title}) => (
     </Box>
   </>
 );
+
+VideoCard.propTypes = {
+  title: PropTypes.string
+} 
 
 export default VideoCard;
