@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import VideoGrid from "../components/videoGrid/VideoGrid";
-import VideoContext, { videos } from "../components/videoGrid/VideoContext";
+import VideoContext from "../components/videoGrid/VideoContext";
+import db from '../data.json'
 
 const Home = () => (
   <>
@@ -23,7 +24,7 @@ const Home = () => (
         earum at rem dicta in.
       </Typography>
     </Box>
-    <VideoContext.Provider value={videos}>
+    <VideoContext.Provider value={db.videos}>
       <VideoGrid />
     </VideoContext.Provider>
   </>

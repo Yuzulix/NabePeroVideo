@@ -9,7 +9,7 @@ const VideoGrid = () => {
   const videos = useContext(VideoContext);
   const tags = [
     "Reaction",
-    "TikTiok",
+    "TikTok",
     "YouTube Shorts",
     "eLearning",
     "Opening/Closing",
