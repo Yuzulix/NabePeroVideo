@@ -7,7 +7,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { BrowserRouter } from "react-router-dom";
 
 import theme from "./theme.js";
-import ScrollToTop from "./components/ScroollToTop.js";
+import ScrollToTop from "./components/ScrollToTop.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
