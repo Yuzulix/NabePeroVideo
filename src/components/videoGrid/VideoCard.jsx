@@ -14,11 +14,18 @@ const VideoCard = () => {
           {video.title}
         </Typography>
         <Typography variant="body1" component="p">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse numquam
-          ut quo deleniti quibusdam perspiciatis deserunt nesciunt eveniet ipsam
-          dolor assumenda ad enim nostrum, repellat a in asperiores libero
-          nulla.
+          {video.description}
         </Typography>
+        {video.tags && video.tags.map((p, i) => (
+            <Typography
+              key={i}
+              variant="caption"
+              component="span"
+              sx={{ paddingRight: 2 }}
+            >
+              {p}
+            </Typography>
+          ))}
       </Box>
     </>
   );

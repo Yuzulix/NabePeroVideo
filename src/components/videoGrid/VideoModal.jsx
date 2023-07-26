@@ -54,10 +54,9 @@ export default function VideoModal() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          {video.title}
           <Box sx={iFrameWraper}>
             <iframe
-              src="https://www.youtube.com/embed/DxL2HoqLbyA"
+              src={video.ytLink}
               title="YouTube video player"
               allow="accelerometer; autoplay; gyroscope"
               allowFullScreen
