@@ -1,15 +1,16 @@
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import VideoCard from "./VideoCard";
-import { useContext, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import VideoContext from "./VideoContext";
 import Tag from "./Tag";
+import db from "../../data.json";
 
 const VideoGrid = () => {
-  const videos = useContext(VideoContext);
+  const videos = db.videos;
   const tags = [
     "Reaction",
-    "TikTiok",
+    "TikTok",
     "YouTube Shorts",
     "eLearning",
     "Opening/Closing",
@@ -60,7 +61,9 @@ const VideoGrid = () => {
       <Grid component="section" container spacing={{ xs: 1, md: 6 }}>
         {renderList.map((video, i) => (
           <Grid item xs={12} md={4} key={i}>
-            <VideoCard title={`${video.title}`} />
+            <VideoContext.Provider value={video}>
+              <VideoCard />
+            </VideoContext.Provider>
           </Grid>
         ))}
       </Grid>

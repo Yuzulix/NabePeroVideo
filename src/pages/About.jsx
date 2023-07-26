@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
 import Profile from "../components/Profile";
-// const names = ["smile", "chihiro", "nabe", "meruert"];
 import db from "../data.json";
 
 const About = () => {

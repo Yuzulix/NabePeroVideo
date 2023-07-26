@@ -1,19 +1,21 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import VideoThumbnail from "./VideoThumbnail";
+import VideoContext from "./VideoContext";
 
 export default function VideoModal() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const video = useContext(VideoContext);
 
   const style = {
     position: "absolute",
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: {xs: 350, sm: 550, md: 800},
+    width: { xs: 350, sm: 550, md: 800 },
     bgcolor: "background.paper",
     border: "2px solid #000",
     boxShadow: 24,
@@ -54,7 +56,7 @@ export default function VideoModal() {
         <Box sx={style}>
           <Box sx={iFrameWraper}>
             <iframe
-              src="https://www.youtube.com/embed/DxL2HoqLbyA"
+              src={video.ytLink}
               title="YouTube video player"
               allow="accelerometer; autoplay; gyroscope"
               allowFullScreen

@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
 import VideoGrid from "../components/videoGrid/VideoGrid";
-import VideoContext, { videos } from "../components/videoGrid/VideoContext";
 
 const Home = () => (
   <>
@@ -16,16 +15,14 @@ const Home = () => (
       }}
     >
       <Typography variant="h4" component="h1" color="black">
-        Lorem ipsum.
+        YOUR POST PRODUCTION TEAM
       </Typography>
-      <Typography variant="body1" component="p" color="black">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae adipisci,
-        earum at rem dicta in.
+      <Typography variant="h5" component="p" color="black">
+        We are experts in creating quality videos that perfectly fit your
+        vision!
       </Typography>
     </Box>
-    <VideoContext.Provider value={videos}>
-      <VideoGrid />
-    </VideoContext.Provider>
+    <VideoGrid />
   </>
 );
 

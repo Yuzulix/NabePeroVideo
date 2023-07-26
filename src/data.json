@@ -99,5 +99,64 @@
                 "Her hobbies are reading romance, thriller and mystery novels, crocheting and pilates."
             ]
         }
+    ],
+    "videos": [
+        {
+            "title": "Reaction and Anime",
+            "ytLink": "https://www.youtube.com/embed/vEpH98rtzyw",
+            "description": "Video Description",
+            "tags": [
+                "Reaction",
+                "Anime"
+            ]
+        },
+        {
+            "title": "Marketing",
+            "ytLink": "https://www.youtube.com/embed/3FyXVZmMY8k",
+            "description": "Video Description",
+            "tags": [
+                "Marketing"
+            ]
+        },
+        {
+            "title": "Tik Tok",
+            "ytLink": "https://www.youtube.com/embed/fhaWTeYzfaQ",
+            "description": "Video Description",
+            "tags": [
+                "TikTok"
+            ]
+        },
+        {
+            "title": "eLearning",
+            "ytLink": "https://www.youtube.com/embed/3FyXVZmMY8k",
+            "description": "Video Description",
+            "tags": [
+                "eLearning"
+            ]
+        },
+        {
+            "title": "Opening/Closing",
+            "ytLink": "https://www.youtube.com/embed/3FyXVZmMY8k",
+            "description": "Video Description",
+            "tags": [
+                "Opening/Closing"
+            ]
+        },
+        {
+            "title": "YouTube Shorts",
+            "ytLink": "https://www.youtube.com/embed/3FyXVZmMY8k",
+            "description": "Video Description",
+            "tags": [
+                "YouTube Shorts"
+            ]
+        },
+        {
+            "title": "Anime",
+            "ytLink": "https://www.youtube.com/embed/3FyXVZmMY8k",
+            "description": "Video Description",
+            "tags": [
+                "Anime"
+            ]
+        }
     ]
 }
