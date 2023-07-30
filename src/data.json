@@ -102,60 +102,48 @@
     ],
     "videos": [
         {
-            "title": "Reaction and Anime",
-            "ytLink": "https://www.youtube.com/embed/vEpH98rtzyw",
-            "description": "Video Description",
+            "title": "JP intro Katakana & Hiragana",
+            "ytLink": "https://www.youtube.com/embed/wf29k5nckwE",
+            "thumbnail": "JPIntroKatakana.webp",
             "tags": [
-                "Reaction",
+                "Openings/Endings",
+                "Japanese"
+            ]
+        },
+        {
+            "title": "Anime reaction intro sample3",
+            "ytLink": "https://www.youtube.com/embed/3FyXVZmMY8k",
+            "thumbnail": "AnimeReactionIntroSample1.webp",
+            "tags": [
+                "Openings/Endings",
                 "Anime"
             ]
         },
         {
-            "title": "Marketing",
-            "ytLink": "https://www.youtube.com/embed/3FyXVZmMY8k",
-            "description": "Video Description",
-            "tags": [
-                "Marketing"
-            ]
-        },
-        {
-            "title": "Tik Tok",
+            "title": "Anime reaction intro sample2",
             "ytLink": "https://www.youtube.com/embed/fhaWTeYzfaQ",
-            "description": "Video Description",
+            "thumbnail": "AnimeReactionIntroSample2.webp",
             "tags": [
-                "TikTok"
-            ]
-        },
-        {
-            "title": "eLearning",
-            "ytLink": "https://www.youtube.com/embed/3FyXVZmMY8k",
-            "description": "Video Description",
-            "tags": [
-                "eLearning"
-            ]
-        },
-        {
-            "title": "Opening/Closing",
-            "ytLink": "https://www.youtube.com/embed/3FyXVZmMY8k",
-            "description": "Video Description",
-            "tags": [
-                "Opening/Closing"
-            ]
-        },
-        {
-            "title": "YouTube Shorts",
-            "ytLink": "https://www.youtube.com/embed/3FyXVZmMY8k",
-            "description": "Video Description",
-            "tags": [
-                "YouTube Shorts"
-            ]
-        },
-        {
-            "title": "Anime",
-            "ytLink": "https://www.youtube.com/embed/3FyXVZmMY8k",
-            "description": "Video Description",
-            "tags": [
+                "Opening/Closing",
                 "Anime"
+            ]
+        },
+        {
+            "title": "JP Intro",
+            "ytLink": "https://www.youtube.com/embed/jWlp_vDNirg",
+            "thumbnail": "JPintro.webp",
+            "tags": [
+                "Opening/Closing",
+                "Japanese"
+            ]
+        },
+        {
+            "title": "Online Course: Gion Festival",
+            "ytLink": "https://www.youtube.com/embed/rmbQ4rfkZL0",
+            "thumbnail": "OnlineCourseGionFestival.webp",
+            "tags": [
+                "E-learning",
+                "Japanese"
             ]
         }
     ]

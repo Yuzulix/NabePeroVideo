@@ -60,7 +60,7 @@ export default function VideoModal() {
               title="YouTube video player"
               allow="accelerometer; autoplay; gyroscope"
               allowFullScreen
-            ></iframe>
+            ></iframe>            
           </Box>
         </Box>
       </Modal>

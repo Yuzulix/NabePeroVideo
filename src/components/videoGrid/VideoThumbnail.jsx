@@ -3,10 +3,19 @@ import PropTypes from "prop-types";
 import GlassBox from "../GlassBox";
 import PlayArrowRoundedIcon from "@mui/icons-material/PlayArrowRounded";
 
+import { useContext } from "react";
+import VideoContext from "./VideoContext";
+
 const VideoThumbnail = (props) => {
   function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
+
+  const video = useContext(VideoContext);
+  const imgUrl = new URL(
+    `../../assets/thumbnails/${video.thumbnail}`,
+    import.meta.url
+  ).href;
 
   return (
     <Box
@@ -42,7 +51,7 @@ const VideoThumbnail = (props) => {
         />
       </GlassBox>
       <img
-        src="https://picsum.photos/1280/720"
+        src={imgUrl}
         alt=""
         className="img"
         loading="lazy"

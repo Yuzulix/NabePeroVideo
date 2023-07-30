@@ -9,13 +9,14 @@ import db from "../../data.json";
 const VideoGrid = () => {
   const videos = db.videos;
   const tags = [
-    "Reaction",
-    "TikTok",
-    "YouTube Shorts",
-    "eLearning",
-    "Opening/Closing",
-    "Marketing",
     "Anime",
+    "Reaction",
+    "Openings/Endings",
+    "TikTok/short",
+    "E-learning",
+    "Marketing",
+    "Japanese",
+    "YT",
   ];
 
   const [filterList, setFilterList] = useState([]);

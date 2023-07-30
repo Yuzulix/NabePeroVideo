@@ -13,9 +13,9 @@ const VideoCard = () => {
         <Typography variant="h5" component="h2" marginTop={2}>
           {video.title}
         </Typography>
-        <Typography variant="body1" component="p">
+        {/* <Typography variant="body1" component="p">
           {video.description}
-        </Typography>
+        </Typography> */}
         {video.tags && video.tags.map((p, i) => (
             <Typography
               key={i}
